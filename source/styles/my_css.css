@@ -46,6 +46,7 @@ body {
     color: #2e9125;
     font-weight: 700;
 }
+
 .logo-image {
     width: 80px;
     margin-bottom: -2px;
@@ -63,8 +64,10 @@ body {
     padding: 10px 15px;
     margin-left: 36px;
     transition: 0.2s ease;
+    cursor: pointer;
 }
-.header-info button:hover{
+
+.header-info button:hover {
     background-color: #66C05D;
 }
 
@@ -88,21 +91,28 @@ hr {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center right 100px;
-    background-attachment:inherit;
+    background-attachment: inherit;
     padding-top: 150px;
     padding-bottom: 150px;
     color: white;
-    
+
 
 }
+
 .title {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 39px;
+}
+.title-h2 {
+    font-size: 24px;
+    font-weight: 700;
 }
 .banner p {
-   margin-bottom: 50px;
-   max-width: 308px;
+    margin-bottom: 50px;
+    max-width: 308px;
 }
+
 .btn {
     color: white;
     text-decoration: none;
@@ -113,11 +123,97 @@ hr {
     transition: 0.2s ease;
 
 }
+
 .btn:hover {
     background-color: white;
     color: #333333;
 }
+
 .bg-white {
     background-color: white;
 
+}
+
+.bg-green {
+    background-color: #66C05D;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.bg-green h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0;
+
+}
+.bg-green-item {
+    flex: 0 0 60%;
+}
+.bg-green-item img {
+    flex: 0 0 40%;
+    text-align:center
+}
+.bg-green input {
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.bg-green .btn {
+    display: block;
+    text-align: center;
+    max-width: 150px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 30px;
+}
+
+.grid-item-title {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.grid-item-img {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.grid-item-left {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.grid-item-right {
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+.grid-item-catalog {
+    text-align: center;
+}
+    
+
+.grid-item-catalog .bg-white {
+    padding: 15px 30px;
+    
+}
+.grid-price {
+    font-size: 21px;
+    font-weight: 500;
+}
+.grid-btn {
+    
+    border-radius: 10px;
+    background-color: #66c05d;
+    border: 2px solid #66c05d;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    cursor: pointer;
 }
